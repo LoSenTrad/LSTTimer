@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LSTTimer_Example' do
+  pod 'LSTTimer', :path => '../'
+
+  target 'LSTTimer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
