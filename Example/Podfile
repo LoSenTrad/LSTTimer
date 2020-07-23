@@ -1,10 +1,16 @@
-use_frameworks!
 
 platform :ios, '8.0'
 
 target 'LSTTimer_Example' do
   pod 'LSTTimer', :path => '../'
-
+  pod 'Masonry'
+  pod 'LSTCategory/UIView+LSTView'
+  pod 'LSTCategory/NSString+LSTString'
+  pod 'LSTCategory/UIColor+LSTColor'
+  pod 'LSTCategory/UIView+LSTView'
+  pod 'LSTCategory/LSTGestureEvents'
+  pod 'LSTCategory/LSTControlEvents'
+  
   target 'LSTTimer_Tests' do
     inherit! :search_paths
 

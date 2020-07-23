@@ -1,0 +1,6 @@
+framework module LSTTimer {
+  umbrella header "LSTTimer-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module LSTCategory {
+  umbrella header "LSTCategory-umbrella.h"
+
+  export *
+  module * { export * }
+}

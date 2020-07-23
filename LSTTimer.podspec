@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LSTTimer'
-  s.version          = '0.1.0'
+  s.version          = '0.1.07231652'
   s.summary          = 'A short description of LSTTimer.'
 
 # This description is used to generate tags and improve search results.
@@ -17,15 +17,13 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'LSTTimer是一个计时器组件, 拥有100ms精确度,支持多任务计时,列表计时,硬盘计时任务等.'
 
-  s.homepage         = 'https://github.com/490790096@qq.com/LSTTimer'
+  s.homepage         = 'https://github.com/LoSenTrad/LSTTimer'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '490790096@qq.com' => 'LoSenTrad@163.com' }
-  s.source           = { :git => 'https://github.com/490790096@qq.com/LSTTimer.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/LoSenTrad/LSTTimer', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

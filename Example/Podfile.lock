@@ -1,0 +1,35 @@
+PODS:
+  - LSTCategory/LSTControlEvents (0.2.04281546)
+  - LSTCategory/LSTGestureEvents (0.2.04281546)
+  - "LSTCategory/NSString+LSTString (0.2.04281546)"
+  - "LSTCategory/UIColor+LSTColor (0.2.04281546)"
+  - "LSTCategory/UIView+LSTView (0.2.04281546)"
+  - LSTTimer (0.1.0)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - LSTCategory/LSTControlEvents
+  - LSTCategory/LSTGestureEvents
+  - "LSTCategory/NSString+LSTString"
+  - "LSTCategory/UIColor+LSTColor"
+  - "LSTCategory/UIView+LSTView"
+  - LSTTimer (from `../`)
+  - Masonry
+
+SPEC REPOS:
+  trunk:
+    - LSTCategory
+    - Masonry
+
+EXTERNAL SOURCES:
+  LSTTimer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LSTCategory: f70d240021080d1c4ab555b6129e74f5b0aa4ccb
+  LSTTimer: cb673c594302e967f517d05e0d6b50ab6a2f2dd7
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 935b1c300a60b6e748fce654190494650cd4f919
+
+COCOAPODS: 1.9.1
