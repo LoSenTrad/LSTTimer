@@ -17,6 +17,7 @@
 		314BBFDE24C2E8C400E08C7D /* LSTTimerDiskVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314BBFDC24C2E8C400E08C7D /* LSTTimerDiskVC.xib */; };
 		314BBFE324C2E98500E08C7D /* LSTTimerRAMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BBFE124C2E98500E08C7D /* LSTTimerRAMVC.m */; };
 		314BBFE424C2E98500E08C7D /* LSTTimerRAMVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314BBFE224C2E98500E08C7D /* LSTTimerRAMVC.xib */; };
+		31E88E0924CAEABC0027FFE8 /* UPDATE_HISTORY.md in Resources */ = {isa = PBXBuildFile; fileRef = 31E88E0824CAEABB0027FFE8 /* UPDATE_HISTORY.md */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -61,6 +62,7 @@
 		314BBFE024C2E98500E08C7D /* LSTTimerRAMVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSTTimerRAMVC.h; sourceTree = "<group>"; };
 		314BBFE124C2E98500E08C7D /* LSTTimerRAMVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSTTimerRAMVC.m; sourceTree = "<group>"; };
 		314BBFE224C2E98500E08C7D /* LSTTimerRAMVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LSTTimerRAMVC.xib; sourceTree = "<group>"; };
+		31E88E0824CAEABB0027FFE8 /* UPDATE_HISTORY.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = UPDATE_HISTORY.md; sourceTree = "<group>"; };
 		4BFB3CADDD3B73B48AF4FB63 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LSTTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSTTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -208,10 +210,10 @@
 		6003F593195388D20070C39A /* Example for LSTTimer */ = {
 			isa = PBXGroup;
 			children = (
-				314BBFD924C2E89800E08C7D /* 硬盘倒计时 */,
-				314BBFD824C2E88D00E08C7D /* 全局内存倒计时 */,
 				314BBFCA24BEF7B500E08C7D /* 倒计时示例 */,
+				314BBFD824C2E88D00E08C7D /* 全局内存倒计时 */,
 				314BBFC924BEF7AB00E08C7D /* 列表倒计时 */,
+				314BBFD924C2E89800E08C7D /* 硬盘倒计时 */,
 				6003F59C195388D20070C39A /* LSTAppDelegate.h */,
 				6003F59D195388D20070C39A /* LSTAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -260,6 +262,7 @@
 			children = (
 				E4681D38D4B9A7835B5A4A63 /* LSTTimer.podspec */,
 				700D4C7B993CC3ABB81B2AC7 /* README.md */,
+				31E88E0824CAEABB0027FFE8 /* UPDATE_HISTORY.md */,
 				4BFB3CADDD3B73B48AF4FB63 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
@@ -352,6 +355,7 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				314BBFCF24BEF84D00E08C7D /* LSTTimerDemoVC.xib in Resources */,
+				31E88E0924CAEABC0027FFE8 /* UPDATE_HISTORY.md in Resources */,
 				314BBFDE24C2E8C400E08C7D /* LSTTimerDiskVC.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				314BBFD724C1830300E08C7D /* LSTTimerListCell.xib in Resources */,

@@ -35,6 +35,7 @@ UITableViewDataSource
     
     
     [self layoutSubViewUI];
+    self.title = @"列表倒计时";
    
     UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithTitle:@"添加数据" style:UIBarButtonItemStylePlain target:self action:@selector(test)];
     self.navigationItem.rightBarButtonItem = rightBarItem;

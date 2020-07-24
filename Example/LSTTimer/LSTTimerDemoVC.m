@@ -157,24 +157,18 @@
     
     //跳过
     [LSTTimer addMinuteTimerForTime:5 identifier:@"jLab1" handle:^(NSString * _Nonnull day, NSString * _Nonnull hour, NSString * _Nonnull minute, NSString * _Nonnull second, NSString * _Nonnull ms) {
-        self.jLab1.text = [NSString stringWithFormat:@"跳过 %1d",second.intValue];
+        weakSelf.jLab1.text = [NSString stringWithFormat:@"跳过 %1d",second.intValue];
     }];
     [LSTTimer addMinuteTimerForTime:8 identifier:@"jLab2" handle:^(NSString * _Nonnull day, NSString * _Nonnull hour, NSString * _Nonnull minute, NSString * _Nonnull second, NSString * _Nonnull ms) {
-        self.jLab2.text = [NSString stringWithFormat:@"(%1d)跳过 ",second.intValue];
+        weakSelf.jLab2.text = [NSString stringWithFormat:@"(%1d)跳过 ",second.intValue];
     }];
     [LSTTimer addMinuteTimerForTime:10 identifier:@"jLab3" handle:^(NSString * _Nonnull day, NSString * _Nonnull hour, NSString * _Nonnull minute, NSString * _Nonnull second, NSString * _Nonnull ms) {
-        self.jLab3.text = [NSString stringWithFormat:@"跳过\n%1d",second.intValue];
+        weakSelf.jLab3.text = [NSString stringWithFormat:@"跳过\n%1d",second.intValue];
     }];
     
     
     
-    //    for (int i = 0; i<1000; i++) {
-    //        //一天10秒 = 86410秒
-    //        [LSTTimer addTimerForTime:86410 handle:^(NSString * _Nonnull day, NSString * _Nonnull hour, NSString * _Nonnull minute, NSString * _Nonnull second, NSString * _Nonnull ms) {
-    //
-    //        }];
-    //
-    //    }
+ 
     
 }
 

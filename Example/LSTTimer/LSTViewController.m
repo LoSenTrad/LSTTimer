@@ -37,8 +37,17 @@ UITableViewDataSource
     [self layoutSubViewUI];
     
     self.title = @"LSTTimer";
-   
-    
+    //10000
+    //1000 --- 55%
+    //100 --- 47%
+    //10 --- 8%
+    for (int i = 0; i<100; i++) {
+        //一天10秒 = 86410秒
+        [LSTTimer addTimerForTime:86410 handle:^(NSString * _Nonnull day, NSString * _Nonnull hour, NSString * _Nonnull minute, NSString * _Nonnull second, NSString * _Nonnull ms) {
+            
+        }];
+        
+    }
 
 }
 
