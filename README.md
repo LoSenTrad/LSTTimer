@@ -50,6 +50,7 @@ LSTTimer单例设计, 内部持有一个NSTimer和计时任务池, 所有的计�
 |---|
 
 - 硬盘计时任务
+
 (当前页面添加硬盘计时任务,退出app,计时任务保存在硬盘,再次打开进入app,如果计时任务没有结束,继续该计时任务)
 
 |自动规避键盘遮挡<br><img src="https://raw.githubusercontent.com/5208171/LSTBlog/master/LSTTimer/%E7%A1%AC%E7%9B%98%E8%AE%A1%E6%97%B6%E4%BB%BB%E5%8A%A1.gif" width = "200" height = "424" alt="图片名称" align=center />|
