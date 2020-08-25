@@ -483,6 +483,84 @@ LSTTimer *LSTTimerM() {
     }];
 }
 
++ (BOOL)resetTimerForIdentifier:(NSString *)identifier {
+    if (identifier.length<=0) {
+        NSLog(@"计时器标识不能为空");
+        return NO;
+    }
+    
+    //只有内存任务才能重启, 硬盘任务只能调用addTimer系列方法重启
+    BOOL isRAM = LSTTimerM().timerMdic[identifier]?YES:NO;//内存有任务
+    if (isRAM) {
+        LSTPopViewTimerModel *model = LSTTimerM().timerMdic[identifier];
+        model.isPause = NO;
+        model.time = model.oriTime;
+        if (model.handleBlock) {
+            NSInteger totalSeconds = model.time/1000.0;
+            NSString *days = [NSString stringWithFormat:@"%zd", totalSeconds/60/60/24];
+            NSString *hours =  [NSString stringWithFormat:@"%zd", totalSeconds/60/60%24];
+            NSString *minute = [NSString stringWithFormat:@"%zd", (totalSeconds/60)%60];
+            NSString *second = [NSString stringWithFormat:@"%zd", totalSeconds%60];
+            CGFloat sss = ((NSInteger)(model.time))%1000/10;
+            NSString *ss = [NSString stringWithFormat:@"%.lf", sss];
+            
+            if (hours.integerValue < 10) {
+                hours = [NSString stringWithFormat:@"0%@", hours];
+            }
+            if (minute.integerValue < 10) {
+                minute = [NSString stringWithFormat:@"0%@", minute];
+            }
+            if (second.integerValue < 10) {
+                second = [NSString stringWithFormat:@"0%@", second];
+            }
+            if (ss.integerValue < 10) {
+                ss = [NSString stringWithFormat:@"0%@", ss];
+            }
+            model.handleBlock(days,hours,minute,second,ss);
+            
+        }
+        return YES;
+    }else {
+        NSLog(@"找不到计时器任务");
+        return NO;
+    }
+}
+
++ (void)resetAllTimer {
+    if (LSTTimerM().timerMdic.count<=0) {
+        return;
+    }
+    
+    [LSTTimerM().timerMdic enumerateKeysAndObjectsUsingBlock:^(NSString *key, LSTPopViewTimerModel *obj, BOOL *stop) {
+        obj.isPause = NO;
+        obj.time = obj.oriTime;
+        if (obj.handleBlock) {
+            NSInteger totalSeconds = obj.time/1000.0;
+            NSString *days = [NSString stringWithFormat:@"%zd", totalSeconds/60/60/24];
+            NSString *hours =  [NSString stringWithFormat:@"%zd", totalSeconds/60/60%24];
+            NSString *minute = [NSString stringWithFormat:@"%zd", (totalSeconds/60)%60];
+            NSString *second = [NSString stringWithFormat:@"%zd", totalSeconds%60];
+            CGFloat sss = ((NSInteger)(obj.time))%1000/10;
+            NSString *ss = [NSString stringWithFormat:@"%.lf", sss];
+            
+            if (hours.integerValue < 10) {
+                hours = [NSString stringWithFormat:@"0%@", hours];
+            }
+            if (minute.integerValue < 10) {
+                minute = [NSString stringWithFormat:@"0%@", minute];
+            }
+            if (second.integerValue < 10) {
+                second = [NSString stringWithFormat:@"0%@", second];
+            }
+            if (ss.integerValue < 10) {
+                ss = [NSString stringWithFormat:@"0%@", ss];
+            }
+            obj.handleBlock(days,hours,minute,second,ss);
+          
+        }
+    }];
+}
+
 + (BOOL)removeTimerForIdentifier:(NSString *)identifier {
     if (identifier.length<=0) {
         NSLog(@"计时器标识不能为空");

@@ -191,7 +191,7 @@
 - (IBAction)resetAction:(UIButton *)sender {
     [LSTTimer removeAllTimer];
     [self layoutSubViewUI];
-    
+//    [LSTTimer resetAllTimer];
 }
 
 

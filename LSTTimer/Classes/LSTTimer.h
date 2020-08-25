@@ -121,7 +121,7 @@ LSTTimer *LSTTimerM(void);
 
 
 #pragma mark - ***** 获取计时任务时间间隔 *****
-/// 通过任务标识获取 任务时间间隔
+/// 通过任务标识获取 计时任务 间隔(毫秒)
 /// @param identifier 计时任务标识
 + (NSTimeInterval)getTimeIntervalForIdentifier:(NSString *)identifier;
 
@@ -135,14 +135,21 @@ LSTTimer *LSTTimerM(void);
 
 #pragma mark - ***** 重启计时任务 *****
 /// 通过标识重启 计时任务
-/// @param identifier 计时暂停回调
+/// @param identifier 计时任务标识
 + (BOOL)restartTimerForIdentifier:(NSString *)identifier;
 /// 重启所有计时任务
 + (void)restartAllTimer;
 
+#pragma mark - ***** 重置计时任务(恢复初始状态) *****
+/// 通过标识重置 计时任务
+/// @param identifier 计时任务标识
++ (BOOL)resetTimerForIdentifier:(NSString *)identifier;
+/// 重置所有计时任务
++ (void)resetAllTimer;
+
 #pragma mark - ***** 移除计时任务 *****
 /// 通过标识移除计时任务
-/// @param identifier 计时暂停回调
+/// @param identifier 计时任务标识
 + (BOOL)removeTimerForIdentifier:(NSString *)identifier;
 /// 移除所有计时任务
 + (void)removeAllTimer;
