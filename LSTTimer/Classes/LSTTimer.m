@@ -151,7 +151,7 @@ LSTTimer *LSTTimerM() {
                  handle:(LSTTimerChangeBlock)handle
                  finish:(LSTTimerFinishBlock)finishBlock
                   pause:(LSTTimerPauseBlock)pauseBlock {
-     [self initTimerForForTime:time identifier:identifier ForIsDisk:NO unit:-1 handle:handle finish:finishBlock pause:finishBlock];
+     [self initTimerForForTime:time identifier:identifier ForIsDisk:NO unit:-1 handle:handle finish:finishBlock pause:pauseBlock];
 }
 
 /** 添加定时器并开启计时 */
@@ -188,7 +188,7 @@ LSTTimer *LSTTimerM() {
                        handle:(LSTTimerChangeBlock)handle
                        finish:(LSTTimerFinishBlock)finishBlock
                         pause:(LSTTimerPauseBlock)pauseBlock {
-     [self initTimerForForTime:time identifier:identifier ForIsDisk:NO unit:1000 handle:handle finish:finishBlock pause:finishBlock];
+     [self initTimerForForTime:time identifier:identifier ForIsDisk:NO unit:1000 handle:handle finish:finishBlock pause:pauseBlock];
 }
 
 /** 添加定时器并开启计时 */
