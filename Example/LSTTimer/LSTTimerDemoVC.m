@@ -87,7 +87,10 @@
     
     
     
-    [LSTTimer addTimerForTime:3608 handle:^(NSString * _Nonnull day, NSString * _Nonnull hour, NSString * _Nonnull minute, NSString * _Nonnull second, NSString * _Nonnull ms) {
+//    [LSTTimer addTimerForTime:3608 handle:^(NSString * _Nonnull day, NSString * _Nonnull hour, NSString * _Nonnull minute, NSString * _Nonnull second, NSString * _Nonnull ms) {
+//        weakSelf.lab2.text = [NSString stringWithFormat:@"%@:%@:%@.%@",hour,minute,second,ms];
+//    }];
+    [LSTTimer addMinuteTimerForTime:300 handle:^(NSString * _Nonnull day, NSString * _Nonnull hour, NSString * _Nonnull minute, NSString * _Nonnull second, NSString * _Nonnull ms) {
         weakSelf.lab2.text = [NSString stringWithFormat:@"%@:%@:%@.%@",hour,minute,second,ms];
     }];
     

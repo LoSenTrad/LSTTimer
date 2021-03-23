@@ -76,7 +76,8 @@ UITableViewDataSource
     
     
     
-    [LSTTimer addTimerForTime:3600 identifier:@"listTimer" handle:nil];
+    [LSTTimer addTimerForTime:3600 identifier:@"listTimer" handle:nil];//对应LSTTimerSecondChangeNFTypeMS(毫秒api)
+//    [LSTTimer addMinuteTimerForTime:3600 identifier:@"listTimer" handle:nil];//对应LSTTimerSecondChangeNFTypeSecond(秒api)
     //配置通知发送和计时任务绑定 没有配置 就不会有通知发送
     [LSTTimer setNotificationForName:@"ListChangeNF" identifier:@"listTimer" changeNFType:LSTTimerSecondChangeNFTypeMS];
 }

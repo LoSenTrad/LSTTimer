@@ -5,7 +5,7 @@
 //  Created by LoSenTrad on 2020/7/13.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 
 
