@@ -567,7 +567,7 @@
 				INFOPLIST_FILE = "LSTTimer/LSTTimer-Info.plist";
 				MARKETING_VERSION = 0.1;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LSTTimer.www;
 				PRODUCT_NAME = LSTTimer;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -586,7 +586,7 @@
 				INFOPLIST_FILE = "LSTTimer/LSTTimer-Info.plist";
 				MARKETING_VERSION = 0.1;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LSTTimer.www;
 				PRODUCT_NAME = LSTTimer;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;

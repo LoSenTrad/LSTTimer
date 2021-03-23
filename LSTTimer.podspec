@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LSTTimer'
-  s.version          = '0.1.08251125'
-  s.summary          = 'A short description of LSTTimer.'
+  s.version          = '0.2.10'
+  s.summary          = '一个计时器组件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

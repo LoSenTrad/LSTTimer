@@ -143,7 +143,14 @@ LSTTimer *LSTTimerM() {
 + (void)addTimerForTime:(NSTimeInterval)time
              identifier:(NSString *)identifier
                  handle:(LSTTimerChangeBlock)handle {
-     [self initTimerForForTime:time identifier:identifier ForIsDisk:NO unit:-1 handle:handle finish:nil pause:nil];
+    
+     [self initTimerForForTime:time
+                    identifier:identifier
+                     ForIsDisk:NO
+                          unit:-1
+                        handle:handle
+                        finish:nil
+                         pause:nil];
 }
 /** 添加定时器并开启计时 */
 + (void)addTimerForTime:(NSTimeInterval)time
@@ -151,14 +158,28 @@ LSTTimer *LSTTimerM() {
                  handle:(LSTTimerChangeBlock)handle
                  finish:(LSTTimerFinishBlock)finishBlock
                   pause:(LSTTimerPauseBlock)pauseBlock {
-     [self initTimerForForTime:time identifier:identifier ForIsDisk:NO unit:-1 handle:handle finish:finishBlock pause:pauseBlock];
+    
+     [self initTimerForForTime:time
+                    identifier:identifier
+                     ForIsDisk:NO
+                          unit:-1
+                        handle:handle
+                        finish:finishBlock
+                         pause:pauseBlock];
 }
 
 /** 添加定时器并开启计时 */
 + (void)addDiskTimerForTime:(NSTimeInterval)time
                  identifier:(NSString *)identifier
                      handle:(LSTTimerChangeBlock)handle {
-     [self initTimerForForTime:time identifier:identifier ForIsDisk:YES unit:-1 handle:handle finish:nil pause:nil];
+    
+     [self initTimerForForTime:time
+                    identifier:identifier
+                     ForIsDisk:YES
+                          unit:-1
+                        handle:handle
+                        finish:nil
+                         pause:nil];
 }
 
 /** 添加定时器并开启计时 */
@@ -167,7 +188,14 @@ LSTTimer *LSTTimerM() {
                      handle:(LSTTimerChangeBlock)handle
                      finish:(LSTTimerFinishBlock)finishBlock
                       pause:(LSTTimerPauseBlock)pauseBlock {
-     [self initTimerForForTime:time identifier:identifier ForIsDisk:YES unit:-1 handle:handle finish:finishBlock pause:pauseBlock];
+    
+     [self initTimerForForTime:time
+                    identifier:identifier
+                     ForIsDisk:YES
+                          unit:-1
+                        handle:handle
+                        finish:finishBlock
+                         pause:pauseBlock];
 }
 
 
@@ -179,7 +207,14 @@ LSTTimer *LSTTimerM() {
 + (void)addMinuteTimerForTime:(NSTimeInterval)time
                    identifier:(NSString *)identifier
                        handle:(LSTTimerChangeBlock)handle {
-     [self initTimerForForTime:time identifier:identifier ForIsDisk:NO unit:1000 handle:handle finish:nil pause:nil];
+    
+     [self initTimerForForTime:time
+                    identifier:identifier
+                     ForIsDisk:NO
+                          unit:1000
+                        handle:handle
+                        finish:nil
+                         pause:nil];
 }
 
 /** 添加定时器并开启计时 */
@@ -188,7 +223,14 @@ LSTTimer *LSTTimerM() {
                        handle:(LSTTimerChangeBlock)handle
                        finish:(LSTTimerFinishBlock)finishBlock
                         pause:(LSTTimerPauseBlock)pauseBlock {
-     [self initTimerForForTime:time identifier:identifier ForIsDisk:NO unit:1000 handle:handle finish:finishBlock pause:pauseBlock];
+    
+     [self initTimerForForTime:time
+                    identifier:identifier
+                     ForIsDisk:NO
+                          unit:1000
+                        handle:handle
+                        finish:finishBlock
+                         pause:pauseBlock];
 }
 
 /** 添加定时器并开启计时 */
@@ -197,7 +239,14 @@ LSTTimer *LSTTimerM() {
                            handle:(LSTTimerChangeBlock)handle
                            finish:(LSTTimerFinishBlock)finishBlock
                             pause:(LSTTimerPauseBlock)pauseBlock {
-     [self initTimerForForTime:time identifier:identifier ForIsDisk:YES unit:1000 handle:handle finish:finishBlock pause:pauseBlock];
+    
+     [self initTimerForForTime:time
+                    identifier:identifier
+                     ForIsDisk:YES
+                          unit:1000
+                        handle:handle
+                        finish:finishBlock
+                         pause:pauseBlock];
 }
 
 //总初始化入口
